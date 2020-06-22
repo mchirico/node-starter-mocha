@@ -10,6 +10,14 @@
     "format": "prettier --write **/*.ts",
     "test": "mocha -r ts-node/register -t 30s 'tests/*.test.ts'"
   },
+ "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm test"
+    }
+  }
+,
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mchirico/node-starter-mocha.git"
@@ -43,4 +51,5 @@
     "ts-node": "^8.6.x",
     "typescript": "^3.7.x"
   }
+
 }
