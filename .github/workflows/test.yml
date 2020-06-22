@@ -22,6 +22,12 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
+    # Setup gcloud CLI
+    - uses: mchirico/gcp-actions@v1
+      with:
+        version: 'latest'
+        service_account_key: ${{ secrets.OWNER }}
+
     # Configure docker to use the gcloud command-line tool as a credential helper
     - run: |
         # Set up docker to authenticate
