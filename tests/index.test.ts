@@ -1,7 +1,7 @@
 import "mocha";
 import { expect } from "chai";
 import { promises } from "fs";
-import { Log } from "../src";
+import { Log } from "../src/index";
 
 describe("Example ...", function() {
   beforeEach(async function() {
@@ -16,7 +16,7 @@ describe("Example ...", function() {
     });
   });
 
-  it("downloads and extracts linux version", async function() {
+  it("log utility", async function() {
     const log = new Log();
     await log.log("test");
     const result = await log.read();
