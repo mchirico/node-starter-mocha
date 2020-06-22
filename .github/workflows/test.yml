@@ -39,7 +39,6 @@ jobs:
     # Credentials
     - name: Get and Create Credentials
       run: |
-       cd node
        mkdir -p credentials
        gsutil cp gs://nodesepta/node-starter-mocha/credentials/firebase-adminsdk.json ./credentials/firebase-adminsdk.json
 
