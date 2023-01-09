@@ -22,7 +22,7 @@
   "homepage": "https://github.com/mchirico/node-starter-mocha#readme",
   "dependencies": {
     "@types/tmp": "^0.1.0",
-    "firebase-admin": "^8.12.1",
+    "firebase-admin": "^11.4.1",
     "tmp": "^0.1.0",
     "typed-rest-client": "^1.7.0"
   },
